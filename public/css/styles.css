@@ -1,0 +1,23 @@
+@import '../Theme/icons/all.min.css';
+@import '../Theme/icons/fontawesome.min.css';
+
+
+
+
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('../Theme/Font/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+
+
+
+
+

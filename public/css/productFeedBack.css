@@ -1,0 +1,269 @@
+
+.product-feedback-section {
+    padding: 20px;
+}
+
+.feedback-section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.feedback-section-description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.feedback-guidelines {
+    margin-bottom: 40px;
+}
+
+.guideline-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.guideline-steps {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    margin-top: 0;
+    background-color: #132333;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.feedback-button {
+    margin-top: auto;
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-button:hover {
+    background-color: #45a049;
+}
+
+.response-flag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FFD700;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.help-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.feedback-guidelines{
+    display: none;
+}
+
+.help-button:hover {
+    background-color: #45a049;
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 2% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    direction: rtl; /* Reverse the order for correct highlighting */
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+    transition: color 0.2s;
+    direction: ltr; /* Ensure the stars appear in the correct direction */
+}
+
+.rating label:before {
+    content: "\2605";
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold;
+}
+
+.rating input[type="radio"]:checked ~ label {
+    color: #ccc;
+}
+
+.rating input[type="radio"]:checked ~ label,
+.rating input[type="radio"]:checked ~ label ~ label {
+    color: gold;
+}
+
+.feedback-text textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .productContainer {
+        display: block;
+    }
+
+    .card {
+        max-width: calc(50% - 40px);
+    }
+
+    .card img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .productContainer {
+        display: block;
+    }
+
+    .card {
+        max-width: calc(100% - 40px);
+    }
+
+    .card img {
+        width: 80%;
+    }
+}

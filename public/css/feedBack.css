@@ -1,0 +1,66 @@
+.feedbackContainer {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    color: #132333;;
+    background-color: white;
+}
+
+h1 {
+    background-color: #132333;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.feedback-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-option {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    height: 200px;
+    text-decoration: none;
+    background-color: #13465E;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(185, 75, 75, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+}
+
+.feedback-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    flex: 0 0 100px;
+}
+
+.icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.info {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.info h2 {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+}
