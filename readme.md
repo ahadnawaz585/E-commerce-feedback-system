@@ -72,11 +72,8 @@ feedbacksystem.com/
 1. **Example Video:**
    - Watch the demo video below to see how the Feedback System works:
 
-   ```html
-   <video width="600" controls>
-     <source src="/public/Video/demo.mp4" type="video/mp4">
-     Your browser does not support the video tag.
-   </video> 
+     https://github.com/ahadnawaz585/E-commerce-feedback-system/blob/main/public/Video/demo.mp4
+  
 
 ## Contributing
 Contributions are welcome! Please fork this repository and submit a pull request for any improvements or bug fixes.
